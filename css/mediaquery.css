@@ -9,3 +9,21 @@
 }
 
 /* RESPONSIVE MOBILE  */
+
+@media screen and (max-width:480px){
+
+    .container{
+        max-width: 480px;
+        margin: 0 auto;
+        padding: 0 20px;  
+      }
+
+    .row{
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+
+    .lessons .col{
+        width: 100%;
+    }
+}
