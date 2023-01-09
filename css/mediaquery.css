@@ -23,7 +23,13 @@
         gap: 60px;
     }
 
+    /* LESSONS SECTION */
     .lessons .col{
+        width: 100%;
+    }
+
+    /* STEPS SECTION */
+    .steps .col{
         width: 100%;
     }
 }
