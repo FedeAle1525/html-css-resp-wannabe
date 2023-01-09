@@ -1,3 +1,13 @@
+/* BONUS */
+
+@media screen and (max-width:1200px){
+    .container{
+        max-width: 1200px;
+        /* Messo per sovrascrivere la proprietà "width" della classe container che altrimenti rimane valida  */
+        width: unset;
+    }
+}
+
 /* RESPONSIVE TABLET */
 
 @media screen and (max-width:768px){
@@ -6,7 +16,7 @@
       margin: 0 auto;
       padding: 0 20px;
       /* Messo per sovrascrivere la proprietà "width" della classe container che altrimenti rimane valida  */
-      width: unset;
+      /* width: unset; */
     }
 }
 
