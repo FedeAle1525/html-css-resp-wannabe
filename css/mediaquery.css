@@ -1,8 +1,15 @@
 /* BONUS */
 
-@media screen and (max-width:1200px){
+/* Si potevano sovrascrivere direttamente le regole di default senza media query */
+/* .container{
+    max-width: 1140px;
+    width: unset;
+} */
+
+/* Aggiungedo la query bonus, questa query risulta superflua visto che la condizione bonnus la copre */
+@media screen and (max-width:1140px){
     .container{
-        max-width: 1200px;
+        max-width: 1140px;
         /* Messo per sovrascrivere la proprietà "width" della classe container che altrimenti rimane valida  */
         width: unset;
     }
@@ -13,8 +20,6 @@
 @media screen and (max-width:768px){
     .container{
       max-width: 768px;
-      margin: 0 auto;
-      padding: 0 20px;
       /* Messo per sovrascrivere la proprietà "width" della classe container che altrimenti rimane valida  */
       /* width: unset; */
     }
@@ -25,14 +30,12 @@
 @media screen and (max-width:480px){
 
     .container{
-        max-width: 480px;
-        margin: 0 auto;
-        padding: 0 20px;  
-      }
+        max-width: 480px; 
+    }
 
     .row{
         flex-wrap: wrap;
-        gap: 60px;
+        gap: 48px;
     }
 
     /* LESSONS SECTION */
@@ -40,9 +43,15 @@
         width: 100%;
     }
 
+
     /* STEPS SECTION */
     .steps .col{
         width: 100%;
+    }
+
+    /* Regole per gstire il problema di colore dello sfondo */
+    .steps{
+        margin-bottom: 0;
     }
 
     /* WHY-US SECTION */
@@ -51,6 +60,9 @@
     }
 
     .why-us{
-    background-color: rgb(34, 34, 34) ;
+        background-color: rgb(34, 34, 34) ;
+        /* Regole per gestire il problema di colore di sfondo */
+        padding: 3rem 0;
+        margin-bottom: 0;
     }
 }
